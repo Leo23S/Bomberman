@@ -1,10 +1,8 @@
 
 package bomberman;
 
-public abstract class Inimigo {
+public abstract class Inimigo extends Posicao{
     private int velocidade;
-    private int posicaoI;
-    private int posicaoJ;
 
     public Inimigo(int velocidade, int posicaoI, int posicaoJ) {
         this.velocidade = velocidade;
@@ -14,19 +12,6 @@ public abstract class Inimigo {
     
     public int getVelocidade() {
         return velocidade;
-    }
-
-    public int getPosicaoI() {
-        return posicaoI;
-    }
-
-    public int getPosicaoJ() {
-        return posicaoJ;
-    }
-
-    public void alterarPosicao(int i, int j){
-        this.posicaoI = i;
-        this.posicaoJ = j;
     }
     
     public abstract void mover();
