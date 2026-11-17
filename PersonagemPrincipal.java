@@ -1,6 +1,6 @@
 package bomberman;
 
-public class PersonagemPrincipal {
+public class PersonagemPrincipal extends Posicao{
     private int vidas;
     private int qtdBombasSimultaneas;
     private int raioExplosao;
